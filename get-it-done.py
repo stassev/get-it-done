@@ -116,7 +116,7 @@ if __name__ == "__main__":
         check_args()
         mode = sys.argv[1]
         if mode == 'play':
-            time.sleep(180)
+            time.sleep(300)
             hosts.clean()
             restart_network()
         else:
