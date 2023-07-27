@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DIRNAME=$(dirname $0)
+
+if [ `whoami` != "root" ]
+then
+    sudo $0 $*
+    exit $?
+fi
+
+$DIRNAME/get-it-done.py "$*"
